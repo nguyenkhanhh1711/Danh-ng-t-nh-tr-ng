@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Word Form – 100 câu từ loại</title>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;800&family=Dancing+Script:wght@700&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1d1d33;--mute:#62627f;--pu:#8a5cff;--pk:#ff3d8b;--or:#ff8a3d;--bl:#4a7dff;--ok:#18a57a;--okb:#d9f5ea;--no:#e0306a;--nob:#ffe1ec;--g:rgba(255,255,255,.78);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:#f1f1f6;color:var(--ink);font:400 16px/1.7 "Be Vietnam Pro",system-ui,sans-serif;overflow-x:hidden}
+.bg{position:fixed;inset:0;z-index:0;overflow:hidden;background:repeating-linear-gradient(45deg,transparent 0 38px,rgba(120,120,160,.07) 38px 39px),repeating-linear-gradient(-45deg,transparent 0 38px,rgba(120,120,160,.07) 38px 39px),#f1f1f6}
+.bg i{position:absolute;border-radius:50%;filter:blur(70px);animation:dr 14s ease-in-out infinite alternate}
+@keyframes dr{to{transform:translate(30px,-24px) scale(1.1)}}
+#top{position:fixed;top:0;left:0;right:0;z-index:60;padding:calc(8px + env(safe-area-inset-top,0px)) 14px 8px;background:var(--g);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 4px 24px rgba(100,80,200,.18);transform:translateY(-110%);transition:transform .4s}
+#top.on{transform:none}
+.tb{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:12px;font:600 14px "Be Vietnam Pro"}
+.pg{flex:1;height:10px;border-radius:10px;background:rgba(29,29,51,.1);overflow:hidden}
+.pg i{display:block;height:100%;width:0;border-radius:10px;background:linear-gradient(90deg,var(--pu),var(--pk),var(--or));transition:width .5s}
+.tb span{white-space:nowrap}.tb .o{color:var(--ok)}.tb .w{color:var(--no)}
+#snd{border:0;background:none;font-size:20px;cursor:pointer}
+header,main{position:relative;z-index:2}
+/* hero */
+header{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 18px 50px;overflow:hidden}
+.ic{position:relative;width:96px;height:96px;border-radius:50%;background:rgba(255,255,255,.7);backdrop-filter:blur(8px);box-shadow:0 14px 40px rgba(255,90,140,.3),inset 0 0 0 2px rgba(255,255,255,.9);display:grid;place-items:center;animation:fl 5s ease-in-out infinite;margin-bottom:-14px;z-index:3}
+.ic:after{content:"";position:absolute;left:10px;bottom:-4px;width:20px;height:20px;background:rgba(255,255,255,.7);border-radius:0 0 0 20px;transform:rotate(-20deg)}
+.ic b{width:56px;height:56px;border-radius:18px;background:linear-gradient(145deg,#ff9a4d,#ff3d8b 60%,#a050ff);display:grid;place-items:center;color:#fff;font:800 32px "Be Vietnam Pro";box-shadow:0 8px 20px rgba(255,61,139,.4),inset 0 2px 4px rgba(255,255,255,.6)}
+@keyframes fl{50%{transform:translateY(-10px)}}
+.sel{position:relative;padding:0 10px;border:1.5px solid var(--bl);margin-top:6px}
+.sel:before,.sel:after,.sel i:before,.sel i:after{content:"";position:absolute;width:9px;height:9px;background:var(--bl)}
+.sel:before{left:-5px;top:-5px}.sel:after{right:-5px;top:-5px}.sel i:before{left:-5px;bottom:-5px}.sel i:after{right:-5px;bottom:-5px}
+.sel h1{font:800 clamp(44px,13.5vw,112px)/1.05 "Be Vietnam Pro";letter-spacing:-3px;color:#23232f}
+.scr{position:relative;z-index:2;margin-top:-.32em;transform:rotate(-5deg);font:700 clamp(64px,19vw,160px)/1 "Dancing Script",cursive;background:linear-gradient(95deg,#7a4dff,#d24bd8 55%,#ff5f8f);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 6px 10px rgba(160,80,255,.25))}
+.scr u{text-decoration:none;color:var(--or);-webkit-text-fill-color:var(--or);display:inline-block;transform:skewX(8deg)}
+.pill{margin-top:-6px;position:relative;z-index:3;background:#fff;border-radius:14px;padding:6px 18px;transform:rotate(-3deg);box-shadow:0 8px 24px rgba(80,60,160,.2);font:700 clamp(10px,2.8vw,13px) "Space Mono",monospace;letter-spacing:.08em;text-transform:uppercase;border:2px solid rgba(255,255,255,.9)}
+.sub{max-width:520px;margin:20px 0 4px;color:var(--mute)}
+.go{margin-top:12px;display:inline-flex;align-items:center;gap:10px;border:0;border-radius:16px;background:linear-gradient(95deg,#ff9a3d,#ff3d8b);color:#fff;font:600 18px "Be Vietnam Pro";padding:12px 30px;cursor:pointer;box-shadow:0 14px 30px rgba(255,61,139,.38),inset 0 2px 3px rgba(255,255,255,.5);transition:.25s}
+.go:hover{transform:translateY(-4px) scale(1.04)}
+.cr{margin-top:16px;background:rgba(255,255,255,.7);border-radius:30px;padding:4px 16px;font:600 13px "Be Vietnam Pro";box-shadow:0 4px 14px rgba(80,60,160,.12)}
+.sp{position:absolute;animation:tw 3.5s ease-in-out infinite}
+@keyframes tw{50%{transform:scale(.6) rotate(20deg);opacity:.6}}
+.dt{position:absolute;border-radius:50%;background:#ff7a8a}
+/* sections */
+.wrap{max-width:900px;margin:0 auto;padding:0 16px 140px}
+.sec{padding:70px 0 0}
+.sh{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.sh em{font:800 13px "Be Vietnam Pro";font-style:normal;color:#fff;border-radius:20px;padding:2px 14px;background:linear-gradient(95deg,var(--pu),var(--pk))}
+.sh h2{font:800 clamp(24px,5vw,38px)/1.15 "Be Vietnam Pro";letter-spacing:-1px}
+.rv{opacity:0;transform:translateY(34px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.on{opacity:1;transform:none}
+.card{background:var(--g);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1.5px solid rgba(255,255,255,.95);border-radius:28px;padding:22px 26px;margin-bottom:18px;box-shadow:0 14px 40px rgba(100,80,200,.14)}
+.card h3{font:800 20px/1.3 "Be Vietnam Pro";margin-bottom:6px}
+.mu{color:var(--mute)}
+b{font-weight:600}
+.lv{display:inline-block;color:#fff;font:800 12px "Be Vietnam Pro";padding:0 12px;border-radius:20px;margin-right:6px;background:var(--c)}
+.A1{--c:#18a57a}.A2{--c:#4a7dff}.B1{--c:#8a5cff}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:560px){.info{grid-template-columns:1fr}}
+.info label{display:block;font:600 12px "Space Mono",monospace;letter-spacing:.06em;color:var(--mute);text-transform:uppercase}
+.info input{width:100%;font:500 17px "Be Vietnam Pro";border:2px solid rgba(29,29,51,.15);border-radius:14px;padding:8px 14px;background:#fff;color:var(--ink)}
+.info input:focus{outline:none;border-color:var(--pu);box-shadow:0 0 0 4px rgba(138,92,255,.18)}
+/* passage */
+.ps{font:500 clamp(18px,3.8vw,22px)/1.9 "Be Vietnam Pro";padding:12px 4px}
+.ps span{border-radius:6px;transition:.15s;padding:0 1px}
+.ps span.hl{background:linear-gradient(95deg,#ffd1e5,#e2d3ff);box-shadow:0 0 0 3px #ffd1e5}
+.ps span.g{color:var(--ok);font-weight:600}.ps span.r{color:var(--no);text-decoration:underline wavy}
+.bt{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px;align-items:center}
+.btn{font:600 14px "Be Vietnam Pro";border:2px solid rgba(29,29,51,.18);background:#fff;color:var(--ink);padding:5px 16px;border-radius:30px;cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-2px);border-color:var(--pu)}
+.btn.p{background:linear-gradient(95deg,#ff9a3d,#ff3d8b);color:#fff;border:0;box-shadow:0 6px 16px rgba(255,61,139,.3)}
+.btn.on{background:var(--pk);color:#fff;border-color:var(--pk);animation:pu 1.2s infinite}
+@keyframes pu{50%{box-shadow:0 0 0 7px rgba(255,61,139,.2)}}
+.rs{margin-top:8px;font-size:14.5px;min-height:22px}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14.5px;background:#fff;border-radius:16px;overflow:hidden}
+th{background:linear-gradient(95deg,var(--pu),var(--pk));color:#fff;text-align:left;padding:8px 12px;font:800 13.5px "Be Vietnam Pro"}
+td{padding:9px 12px;border-top:1px solid rgba(29,29,51,.08);vertical-align:top}td:first-child{font-weight:800}
+/* dialog */
+.dl{display:grid;gap:8px;margin:10px 0}
+.ln{padding:8px 14px;border-radius:18px;background:#fff;border-left:5px solid var(--c,var(--pu));transition:.2s}
+.ln.a{--c:var(--bl)}.ln.b{--c:var(--pk)}.ln.act{background:linear-gradient(95deg,#ffe1ec,#e8deff);transform:translateX(6px)}
+.ln b{color:var(--c)}
+.hid .ln{filter:blur(7px);user-select:none}
+.bl{display:inline-block;min-width:120px;border:0;border-bottom:3px solid var(--pk);background:transparent;font:700 17px "Be Vietnam Pro";color:var(--pk);text-align:center;padding:0 6px}
+.bl:focus{outline:none;border-color:var(--pu)}
+.bl.c{border-color:var(--ok);color:var(--ok)}.bl.x{border-color:var(--no);color:var(--no)}
+.qa input{width:100%;font:500 16px "Be Vietnam Pro";border:2px solid rgba(29,29,51,.15);border-radius:14px;padding:8px 14px;background:#fff;margin:6px 0}
+.qa input:focus{outline:none;border-color:var(--pu)}
+.fb{margin-top:8px;padding:10px 14px;border-radius:16px;font-size:14.5px;border-left:5px solid;animation:up .4s}
+.fb.ok{background:var(--okb);border-color:var(--ok)}.fb.no{background:var(--nob);border-color:var(--no)}.fb.nt{background:#eef0ff;border-color:var(--bl)}
+@keyframes up{from{opacity:0;transform:translateY(8px)}}
+textarea{width:100%;min-height:64px;border:2px solid rgba(29,29,51,.15);border-radius:14px;background:#fff;color:var(--ink);padding:9px 14px;font:16px "Be Vietnam Pro";resize:vertical;margin:8px 0}
+textarea:focus{outline:none;border-color:var(--pu)}
+.ac{margin:6px 0 0 18px}.ac li{margin:2px 0}
+.n{display:inline-block;background:var(--ink);color:#fff;font:800 12px "Be Vietnam Pro";padding:0 12px;border-radius:20px;margin-bottom:4px}
+/* dock */
+#dock{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:70;display:flex;gap:6px;align-items:center;background:var(--g);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1.5px solid rgba(255,255,255,.95);border-radius:99px;padding:5px 12px;box-shadow:0 10px 30px rgba(100,80,200,.25);font:600 13px "Be Vietnam Pro";max-width:96vw}
+#dock button{border:0;background:rgba(29,29,51,.07);color:var(--ink);padding:3px 12px;border-radius:99px;font:600 12.5px "Be Vietnam Pro";cursor:pointer;white-space:nowrap;transition:.2s}
+#dock button.on{background:linear-gradient(95deg,#ff9a3d,#ff3d8b);color:#fff}
+/* result */
+#res{background:linear-gradient(150deg,rgba(138,92,255,.92),rgba(255,61,139,.92));color:#fff;border-radius:34px;padding:34px 24px;text-align:center;box-shadow:0 18px 44px rgba(138,92,255,.4)}
+#res h2{font:800 28px "Be Vietnam Pro"}#res .bgn{font:800 clamp(52px,14vw,92px)/1.1 "Be Vietnam Pro"}
+#res .row{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:8px 0;font-size:14px}#res .row i{font-style:normal;background:rgba(255,255,255,.22);border-radius:20px;padding:0 14px}
+#res .btn{background:transparent;color:#fff;border-color:#fff;margin:4px}#res .btn:hover{background:#fff;color:var(--pk)}
+@media print{.bg,#top,#dock,header,.bt,.go{display:none!important}.rv{opacity:1!important;transform:none!important}body{background:#fff}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+
+.cn{--cc:#ff3d8b}.cv{--cc:#2f63e6}.cadj{--cc:#c47b00}.cadv{--cc:#8a5cff}.cx{--cc:#888}
+.chip{display:inline-block;padding:0 10px;margin:2px 4px 2px 0;font-size:14px;border-radius:20px;border:1.5px solid var(--cc);color:var(--cc);background:rgba(255,255,255,.75);font-weight:600}
+.chip em{font-style:normal;font-weight:400;opacity:.85}
+.fam{margin-top:6px}
+.g4{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.col{background:#fff;border-radius:20px;padding:14px 16px;border-top:6px solid var(--cc)}
+.col h4{font:800 17px "Be Vietnam Pro";color:var(--cc);margin-bottom:4px}
+.col p{font-size:14px;line-height:1.6}
+.qh{margin:38px 0 14px;display:inline-block;padding:6px 20px;border-radius:30px;background:rgba(255,255,255,.8);backdrop-filter:blur(8px);font:800 17px "Be Vietnam Pro";box-shadow:0 6px 18px rgba(100,80,200,.15)}
+.q{background:var(--g);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1.5px solid rgba(255,255,255,.95);border-radius:26px;padding:18px 24px;margin-bottom:14px;box-shadow:0 12px 32px rgba(100,80,200,.13);transition:box-shadow .3s}
+.q.ok2{box-shadow:0 0 0 3px var(--ok),0 12px 32px rgba(100,80,200,.13)}.q.no2{box-shadow:0 0 0 3px var(--no),0 12px 32px rgba(100,80,200,.13)}
+.qn{display:inline-block;background:linear-gradient(95deg,var(--pu),var(--pk));color:#fff;font:800 13px "Be Vietnam Pro";padding:0 14px;border-radius:20px;margin-bottom:4px}
+.q p.t{font:600 18px/1.55 "Be Vietnam Pro";margin-bottom:12px}
+.q u{text-decoration:none;display:inline-block;min-width:56px;border-bottom:3px solid var(--pk);text-align:center;color:var(--pk);font-weight:800}
+.op{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:520px){.op{grid-template-columns:1fr}}
+.op button{display:flex;gap:10px;align-items:center;font:500 16px "Be Vietnam Pro";text-align:left;padding:8px 14px;border-radius:16px;border:2px solid rgba(29,29,51,.15);background:#fff;color:var(--ink);cursor:pointer;transition:.2s}
+.op button b{flex:none;width:26px;height:26px;border-radius:50%;background:rgba(29,29,51,.08);display:grid;place-items:center;font:800 12px "Be Vietnam Pro"}
+.op button:hover:not(:disabled){border-color:var(--pk);transform:translateY(-2px)}
+.op button:disabled{cursor:default}
+.op .c{background:var(--ok);border-color:var(--ok);color:#fff}.op .c b{background:#fff;color:var(--ok)}
+.op .x{background:var(--no);border-color:var(--no);color:#fff;animation:sk .4s}.op .x b{background:#fff;color:var(--no)}
+@keyframes sk{25%{transform:translateX(-7px)}75%{transform:translateX(7px)}}
+.fb{margin-top:12px;padding:10px 14px;border-radius:16px;font-size:15px;border-left:5px solid;animation:up .45s}
+.fb.ok{background:var(--okb);border-color:var(--ok)}.fb.no{background:var(--nob);border-color:var(--no)}
+#wl{font-size:14px;margin:6px 0}#wl a{color:#fff3a0;margin:0 3px;font-weight:600}
+</style>
+</head>
+<body>
+<div class="bg"><i style="right:-20%;top:-18%;width:70vmax;height:60vmax;background:linear-gradient(135deg,#9a8cff,#6aa0ff 60%,#c27bff);opacity:.75"></i><i style="left:-26%;bottom:-24%;width:70vmax;height:60vmax;background:linear-gradient(45deg,#ff4f86,#ff9a6a);opacity:.7;animation-delay:-6s"></i></div>
+<div id="top"><div class="tb"><span>✨ Word Form</span><div class="pg"><i id="pg"></i></div><span id="st">0/100</span><span class="o" id="so">✔ 0</span><span class="w" id="sw">✘ 0</span><button id="snd" aria-label="Âm thanh">🔊</button></div></div>
+<header>
+  <svg width="0" height="0" style="position:absolute"><defs><linearGradient id="sg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff8a3d"/><stop offset="1" stop-color="#ff3d8b"/></linearGradient><symbol id="st4" viewBox="0 0 24 24"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z" fill="url(#sg)"/></symbol></defs></svg>
+  <svg class="sp" style="left:8%;top:30%;width:34px" viewBox="0 0 24 24"><use href="#st4"/></svg>
+  <svg class="sp" style="right:12%;top:20%;width:24px;animation-delay:-1s" viewBox="0 0 24 24"><use href="#st4"/></svg>
+  <svg class="sp" style="left:12%;bottom:18%;width:28px;animation-delay:-2s" viewBox="0 0 24 24"><use href="#st4"/></svg>
+  <svg class="sp" style="right:6%;top:42%;width:26px;animation-delay:-.5s" viewBox="0 0 24 24"><path d="M3 2L22 12L3 22Z" fill="#ff5a4a"/></svg>
+  <i class="dt" style="left:20%;top:16%;width:8px;height:8px"></i><i class="dt" style="right:22%;bottom:22%;width:10px;height:10px;opacity:.7"></i><i class="dt" style="left:6%;top:56%;width:6px;height:6px"></i>
+  <div class="ic"><b>Aa</b></div>
+  <div class="sel"><h1>Word</h1><i></i></div>
+  <div class="scr">Form<u>!</u></div>
+  <div class="pill">Noun · Verb · Adj · Adv</div>
+  <p class="sub">100 câu nhận diện từ loại và điền từ Word Form. Làm xong câu nào là có đáp án, giải nghĩa cả 4 từ và giải thích ngay.</p>
+  <button class="go" id="go"><svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M6 2h12a1 1 0 0 1 1 1v19l-7-4.5L5 22V3a1 1 0 0 1 1-1z"/></svg>Bắt đầu làm bài</button>
+  <div class="cr">Danh · Động · Tính · Trạng từ</div>
+</header>
+<main class="wrap">
+<section class="sec" id="s0">
+  <div class="sh rv"><em>BÀI HỌC</em><h2>Bảng nhớ nhanh</h2></div>
+  <div class="card rv"><h3>Nhìn đuôi từ, nhìn vị trí</h3><p class="mu">Quan sát kỹ <b>hậu tố (đuôi từ)</b> ở các đáp án để xác định loại từ. Với câu điền từ, xác định chỗ trống cần danh, động, tính hay trạng từ dựa vào cấu trúc câu, rồi tìm từ có hậu tố tương ứng.</p>
+  <div class="g4" style="margin-top:12px">
+   <div class="col" style="--cc:#ff3d8b"><h4>Danh từ (N)</h4><p><b>-tion, -sion, -ment, -ness, -ity, -ce / -cy, -ship, -hood, -dom, -ism</b>; người: <b>-er, -or, -ee, -ist, -ian, -ant</b>.<br><i class="mu">Vị trí: sau a/the, tính từ sở hữu, lượng từ, giới từ, tính từ; làm chủ ngữ.</i></p></div>
+   <div class="col" style="--cc:#2f63e6"><h4>Động từ (V)</h4><p><b>-ize / -ise, -en, -ate, -ify</b> và tiền tố <b>en-</b>.<br><i class="mu">Vị trí: sau chủ ngữ, trạng từ tần suất, modal, trợ động từ, “to”.</i></p></div>
+   <div class="col" style="--cc:#c47b00"><h4>Tính từ (Adj)</h4><p><b>-ful, -less, -ous, -al, -ic, -ive, -able / -ible, -y, -ish</b>; <b>-ed</b> (cảm giác của người), <b>-ing</b> (bản chất vật/sự việc).<br><i class="mu">Vị trí: trước danh từ, sau to-be và linking verb.</i></p></div>
+   <div class="col" style="--cc:#8a5cff"><h4>Trạng từ (Adv)</h4><p><b>Tính từ + -ly</b> (quickly, carefully). Bẫy: <b>friendly</b> là tính từ; <b>hardly</b> = hầu như không.<br><i class="mu">Vị trí: bổ nghĩa động từ, tính từ, trạng từ khác, hoặc cả câu.</i></p></div>
+  </div></div>
+</section>
+<section class="sec" id="s1">
+  <div class="sh rv"><em>PHẦN 1</em><h2>Nhận diện từ loại (60 câu)</h2></div>
+  <p class="rv" style="margin-bottom:4px">Sau mỗi câu, trang giải nghĩa cả 4 đáp án, tô màu theo loại từ: <span class="chip cn">danh từ</span><span class="chip cv">động từ</span><span class="chip cadj">tính từ</span><span class="chip cadv">trạng từ</span></p>
+  <div id="m1"></div>
+</section>
+<section class="sec" id="s2">
+  <div class="sh rv"><em>PHẦN 2</em><h2>Điền từ Word Form (40 câu)</h2></div>
+  <div id="m2"></div>
+  <div id="res" class="rv" style="margin-top:44px"><h2>Kết quả của bạn</h2><div class="bgn" id="big">0 / 100</div><div class="row" id="pp"></div><p id="msg">Hoàn thành cả 100 câu để nhận lời nhắn nhé.</p><div id="wl"></div><button class="btn" id="rw">Làm lại các câu sai</button><button class="btn" onclick="location.reload()">Làm lại tất cả ↺</button></div>
+</section>
+</main>
+<script>
+const $=s=>document.querySelector(s);
+let ac,on=true;
+function tone(f,t,d,ty,v,to){const o=ac.createOscillator(),g=ac.createGain();o.type=ty;o.frequency.setValueAtTime(f,t);if(to)o.frequency.exponentialRampToValueAtTime(to,t+d);g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(v,t+.015);g.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(g);g.connect(ac.destination);o.start(t);o.stop(t+d+.05)}
+function sfx(ok){if(!on)return;ac=ac||new(window.AudioContext||window.webkitAudioContext)();ac.resume();const t=ac.currentTime;if(ok)[660,880,1175].forEach((f,i)=>tone(f,t+i*.09,.4,"sine",.16));else{tone(300,t,.3,"triangle",.16,190);tone(220,t+.15,.35,"triangle",.14,150)}}
+$("#snd").onclick=()=>{on=!on;$("#snd").textContent=on?"🔊":"🔇"};
+const R=[
+"develop:v:phát triển|developmental:adj:thuộc sự phát triển|developing:adj:đang phát triển|development:n:sự phát triển",3,
+"informally:adv:một cách thân mật|inform:v:thông báo|informative:adj:cung cấp nhiều thông tin|information:n:thông tin",3,
+"happen:v:xảy ra|happiness:n:niềm hạnh phúc|happily:adv:một cách vui vẻ|happy:adj:vui vẻ",1,
+"attraction:n:sự thu hút|attract:v:thu hút|attractively:adv:một cách hấp dẫn|attractive:adj:hấp dẫn",0,
+"employable:adj:có thể thuê được|employee:n:nhân viên|employ:v:thuê mướn|employing:x:đang thuê (V-ing)",1,
+"decisive:adj:kiên quyết|decide:v:quyết định|decisively:adv:một cách kiên quyết|decision:n:quyết định",3,
+"beautiful:adj:xinh đẹp|beautifully:adv:một cách xinh đẹp|beautify:v:làm đẹp|beauty:n:vẻ đẹp",3,
+"discussed:x:đã thảo luận (V-ed)|discuss:v:thảo luận|discussion:n:sự thảo luận|discussable:adj:có thể thảo luận",2,
+"able:adj:có khả năng|enable:v:cho phép, làm cho có thể|ably:adv:một cách khéo léo|ability:n:khả năng",3,
+"importantly:adv:một cách quan trọng|import:v:nhập khẩu (cũng là danh từ)|important:adj:quan trọng|importance:n:sự quan trọng",3,
+"performance:n:màn biểu diễn|performed:x:đã biểu diễn (V-ed)|perform:v:biểu diễn|performative:adj:mang tính biểu diễn",0,
+"free:adj:tự do, miễn phí (cũng là động từ)|freely:adv:một cách tự do|freeing:x:đang giải phóng (V-ing)|freedom:n:sự tự do",3,
+"assistive:adj:có tính hỗ trợ|assistant:n:người trợ lý|assist:v:hỗ trợ|assistly:x:từ sai",1,
+"differently:adv:một cách khác biệt|different:adj:khác nhau|differ:v:khác với|difference:n:sự khác biệt",3,
+"childless:adj:không có con|childing:x:từ sai|childish:adj:tính trẻ con|childhood:n:thời thơ ấu",3,
+"modern:adj:hiện đại|modernity:n:tính hiện đại|modernization:n:sự hiện đại hóa|modernize:v:hiện đại hóa",3,
+"widely:adv:một cách rộng rãi|wide:adj:rộng|width:n:bề rộng|widen:v:mở rộng",3,
+"communicatively:adv:bằng cách giao tiếp|communication:n:sự giao tiếp|communicative:adj:cởi mở|communicate:v:giao tiếp",3,
+"beautiful:adj:xinh đẹp|beautifully:adv:một cách xinh đẹp|beauty:n:vẻ đẹp|beautify:v:làm đẹp",3,
+"courageous:adj:can đảm|encourage:v:khuyến khích|courage:n:lòng dũng cảm|courageously:adv:một cách can đảm",1,
+"strongly:adv:một cách mạnh mẽ|strengthen:v:tăng cường, làm mạnh|strong:adj:mạnh|strength:n:sức mạnh",1,
+"clarity:n:sự rõ ràng|clear:adj:rõ ràng|clearly:adv:một cách rõ ràng|clarify:v:làm rõ",3,
+"actively:adv:một cách tích cực|action:n:hành động|activate:v:kích hoạt|active:adj:năng động",2,
+"memorably:adv:một cách đáng nhớ|memorable:adj:đáng nhớ|memory:n:trí nhớ|memorize:v:ghi nhớ",3,
+"short:adj:ngắn|shortly:adv:trong thời gian ngắn|shortness:n:sự ngắn ngủi|shorten:v:rút ngắn",3,
+"identify:v:nhận dạng, xác định|identically:adv:một cách giống hệt|identical:adj:giống hệt nhau|identity:n:danh tính",0,
+"endanger:v:gây nguy hiểm|dangerously:adv:một cách nguy hiểm|danger:n:sự nguy hiểm|dangerous:adj:nguy hiểm",0,
+"creatively:adv:một cách sáng tạo|creation:n:sự sáng tạo|creative:adj:có tính sáng tạo|create:v:tạo ra",3,
+"validate:v:xác nhận tính hợp lệ|validity:n:tính hợp lệ|validly:adv:một cách hợp lệ|valid:adj:hợp lệ",0,
+"simple:adj:đơn giản|simplify:v:đơn giản hóa|simply:adv:một cách đơn giản|simplicity:n:sự đơn giản",1,
+"careful:adj:cẩn thận|care:x:quan tâm / sự quan tâm (động từ hoặc danh từ)|carefully:adv:một cách cẩn thận|carefulness:n:sự cẩn thận",0,
+"danger:n:sự nguy hiểm|endanger:v:gây nguy hiểm|dangerously:adv:một cách nguy hiểm|dangerous:adj:nguy hiểm",3,
+"national:adj:thuộc quốc gia|nation:n:quốc gia|nationally:adv:toàn quốc|nationalize:v:quốc hữu hóa",0,
+"activate:v:kích hoạt|active:adj:năng động|actively:adv:một cách tích cực|action:n:hành động",1,
+"comfortable:adj:thoải mái|comforter:n:người an ủi / cái chăn|comfort:x:an ủi / sự thoải mái (động từ hoặc danh từ)|comfortably:adv:một cách thoải mái",0,
+"bore:v:làm phiền, gây chán|boringly:adv:một cách nhàm chán|bored:adj:cảm thấy chán nản|boredom:n:sự chán nản",2,
+"interest:x:sự quan tâm / làm cho quan tâm (danh từ hoặc động từ)|interestedly:adv:với vẻ quan tâm|interesting:adj:thú vị (cho vật, sự việc)|interestingly:adv:một cách thú vị",2,
+"home:n:ngôi nhà|homeward:x:hướng về nhà (phó từ hoặc tính từ)|homely:adj:giản dị, ấm cúng|homeless:adj:vô gia cư",3,
+"succeed:v:thành công|successfully:adv:một cách thành công|successful:adj:thành công|success:n:sự thành công",2,
+"history:n:lịch sử|historically:adv:về mặt lịch sử|historic:adj:mang tính lịch sử|historian:n:nhà sử học",2,
+"friendly:adj:thân thiện|friend:n:người bạn|befriend:v:kết bạn|friendship:n:tình bạn",0,
+"attract:v:thu hút|attractive:adj:hấp dẫn|attractively:adv:một cách hấp dẫn|attraction:n:sự thu hút",1,
+"naturalize:v:nhập quốc tịch, tự nhiên hóa|naturally:adv:một cách tự nhiên|nature:n:thiên nhiên|natural:adj:thuộc tự nhiên",3,
+"famously:adv:một cách nổi tiếng|defame:v:phỉ báng|fame:n:danh tiếng|famous:adj:nổi tiếng",3,
+"reliable:adj:đáng tin cậy|reliably:adv:một cách đáng tin|reliability:n:sự đáng tin cậy|rely:v:tin cậy, dựa vào",0,
+"beauty:n:vẻ đẹp|beautiful:adj:xinh đẹp|beautifully:adv:một cách xinh đẹp|beautify:v:làm đẹp",2,
+"quicken:v:làm nhanh hơn|quickness:n:sự nhanh nhẹn|quickly:adv:một cách nhanh chóng|quick:adj:nhanh",2,
+"care:x:sự quan tâm / quan tâm (danh từ hoặc động từ)|carefully:adv:một cách cẩn thận|careless:adj:bất cẩn|careful:adj:cẩn thận",1,
+"fluency:n:sự trôi chảy|fluently:adv:một cách trôi chảy|fluent:adj:trôi chảy|fluents:x:từ sai",1,
+"happen:v:xảy ra|happily:adv:một cách vui vẻ|happiness:n:niềm hạnh phúc|happy:adj:vui vẻ",1,
+"hard:x:cứng, khó, chăm chỉ (vừa là tính từ vừa là trạng từ)|hardness:n:độ cứng|harden:v:làm cứng|hardly:adv:hầu như không",3,
+"ease:x:làm dịu / sự thanh thản (động từ hoặc danh từ)|easily:adv:một cách dễ dàng|easy:adj:dễ dàng|easiness:n:sự dễ dàng",1,
+"completeness:n:sự trọn vẹn|completely:adv:hoàn toàn|completion:n:sự hoàn thành|complete:x:hoàn thành / trọn vẹn (động từ hoặc tính từ)",1,
+"successful:adj:thành công|success:n:sự thành công|successfully:adv:một cách thành công|succeed:v:thành công",2,
+"currently:adv:hiện tại|current:x:hiện hành / dòng chảy (tính từ hoặc danh từ)|currency:n:tiền tệ|currents:x:các dòng chảy (danh từ số nhiều)",0,
+"terror:n:sự kinh hoàng|terrify:v:làm khiếp sợ|terribly:adv:tồi tệ, rất nhiều|terrible:adj:tồi tệ",2,
+"recentness:n:sự mới mẻ|recently:adv:gần đây|recents:x:từ sai|recent:adj:gần đây",1,
+"action:n:hành động|actively:adv:một cách tích cực|active:adj:năng động|activate:v:kích hoạt",1,
+"dangerous:adj:nguy hiểm|danger:n:sự nguy hiểm|endanger:v:gây nguy hiểm|dangerously:adv:một cách nguy hiểm",3,
+"heavily:adv:một cách nặng nề, nhiều|heave:v:nâng lên|heavy:adj:nặng|heaviness:n:sự nặng nề",0];
+
+const W=[
+["She runs very ___. She won the gold medal.","quick|quickness|quicken|quickly",3,"“Runs” là động từ thường nên cần trạng từ (tính từ + ly) → <b>quickly</b>."],
+["The ___ of the new city is happening very fast.","develop|developing|developmental|development",3,"Sau “The”, trước “of” cần danh từ; <b>-ment</b> → <b>development</b> (sự phát triển)."],
+["He is a very ___ driver. He never causes accidents.","careless|carefully|careful|care",2,"Trước danh từ driver cần tính từ; không gây tai nạn → <b>careful</b> (cẩn thận), không phải careless."],
+["We must ___ the environment from pollution.","protection|protective|protect|protector",2,"Sau modal “must” là động từ nguyên thể → <b>protect</b>."],
+["The flowers in the garden smell extremely ___.","sweet|sweetly|sweetness|sweater",0,"“Smell” là linking verb nên cần tính từ → <b>sweet</b>; “extremely” bổ nghĩa cho tính từ."],
+["He looked at me ___ when I broke his phone.","angry|angrily|anger|angrier",1,"“Looked at” là hành động nên cần trạng từ cách thức → <b>angrily</b>."],
+["They made a quick ___ to leave the building.","decisive|decisively|decide|decision",3,"Sau “a quick” (tính từ) là danh từ; <b>-sion</b> → <b>decision</b> (quyết định)."],
+["The new policy will ___ our economy.","strong|strength|strengthen|strongly",2,"Sau “will” là động từ; <b>-en</b> → <b>strengthen</b> (làm mạnh lên, tăng cường)."],
+["She was completely ___ after the long trip.","exhausting|exhaustion|exhaust|exhausted",3,"Sau to-be + trạng từ “completely” cần tính từ chỉ cảm giác của người (<b>-ed</b>) → <b>exhausted</b> (kiệt sức)."],
+["I find this book very ___. I can't stop reading it.","interested|interestingly|interesting|interest",2,"Find + O + Adj; tính từ chỉ bản chất của vật/sự việc (<b>-ing</b>) → <b>interesting</b>."],
+["The manager ___ announced the new plan to everyone.","recents|recentness|recently|recent",2,"Giữa chủ ngữ và động từ cần trạng từ → <b>recently</b> (gần đây)."],
+["His ___ at the party was completely unacceptable.","behavioral|behavior|behaviors|behave",1,"Sau tính từ sở hữu “His” là danh từ số ít (động từ “was”) → <b>behavior</b> (hành vi)."],
+["I am highly ___ by her amazing performance.","impressed|impressive|impression|impress",0,"Sau “am highly” cần tính từ chỉ cảm giác của người (<b>-ed</b>) → <b>impressed</b> (bị ấn tượng)."],
+["This is an ___ program for young children.","education|educator|educate|educational",3,"Sau “an”, trước danh từ program cần tính từ → <b>educational</b> (mang tính giáo dục)."],
+["He solved the complex math problem very ___.","easy|ease|easiness|easily",3,"Sau động từ và tân ngữ cần trạng từ → <b>easily</b>; “very” bổ nghĩa cho trạng từ."],
+["The company wants to ___ its factory equipment.","modern|modernization|modernity|modernize",3,"Sau “wants to” là động từ; <b>-ize</b> → <b>modernize</b> (hiện đại hóa)."],
+["___, no one was seriously hurt in the accident.","Luckily|Lucky|Unlucky|Luck",0,"Đứng đầu câu, ngăn cách bằng dấu phẩy, bổ nghĩa cả câu → trạng từ <b>Luckily</b>."],
+["We need some more ___ about the flight schedule.","informer|information|inform|informative",1,"Sau lượng từ “some more” cần danh từ; <b>-tion</b> → <b>information</b> (thông tin)."],
+["She is ___ dressed for the party tonight.","beautify|beautiful|beauty|beautifully",3,"Trạng từ đứng trước “dressed” để bổ nghĩa → <b>beautifully</b> (một cách xinh đẹp)."],
+["The government provides ___ support for poor families.","finance|financially|finances|financial",3,"Trước danh từ support cần tính từ → <b>financial</b> (thuộc tài chính; hậu tố <b>-al</b>)."],
+["Walking 10,000 steps a day is a ___ habit.","healthy|healthily|healthier|health",0,"Sau “a”, trước danh từ habit cần tính từ → <b>healthy</b> (hậu tố <b>-y</b>)."],
+["Please ___ your statement so everyone can understand.","clear|clearly|clarity|clarify",3,"Sau “Please” là động từ; <b>-ify</b> → <b>clarify</b> (làm rõ)."],
+["Their ___ has lasted for more than 10 years.","friend|befriend|friendship|friendly",2,"Sau tính từ sở hữu “Their” là danh từ chỉ mối quan hệ; <b>-ship</b> → <b>friendship</b> (tình bạn)."],
+["It is ___ cold today. You should wear a jacket.","extreme|extremes|extremely|extremeness",2,"Trạng từ đứng trước tính từ cold → <b>extremely</b>."],
+["The ___ will start at exactly 9 AM.","meeting|meets|meet|met",0,"Sau “The” và làm chủ ngữ cần danh từ → <b>meeting</b> (cuộc họp)."],
+["Can you please speak more ___? I am learning English.","slow|slowed|slowness|slowly",3,"Sau động từ speak cần trạng từ; “more slowly” (chậm hơn) → <b>slowly</b>."],
+["She takes full ___ for the error in the report.","responsibility|responsible|responses|responsibly",0,"Sau “full” và động từ takes cần danh từ; <b>-ity</b> → <b>responsibility</b> (trách nhiệm)."],
+["The sky is getting ___. It is going to rain soon.","darkly|darken|dark|darkness",2,"“Getting” là linking verb nên cần tính từ → <b>dark</b> (tối)."],
+["My teacher always ___ me to try my best.","courage|encourages|courageous|courageously",1,"Sau trạng từ tần suất “always”, chủ ngữ số ít cần động từ chia -s; tiền tố <b>en-</b> → <b>encourages</b>."],
+["We had a ___ time at the beach last weekend.","wonderful|wonders|wonderfully|wonder",0,"Sau “a”, trước danh từ time cần tính từ → <b>wonderful</b> (<b>-ful</b>)."],
+["He drives ___. He has had three accidents this year.","endanger|danger|dangerously|dangerous",2,"Sau động từ thường drives cần trạng từ → <b>dangerously</b> (một cách nguy hiểm)."],
+["They are making ___ for their upcoming wedding.","preparatory|prepare|preparations|prepared",2,"Sau động từ making cần danh từ số nhiều (<b>-tion</b>) → <b>preparations</b> (sự chuẩn bị)."],
+["This job requires high ___ and focus.","acurates|accuracy|accurately|accurate",1,"Sau tính từ high và nối với danh từ focus → danh từ <b>accuracy</b> (độ chính xác). (“acurates” trong đề là từ sai chính tả.)"],
+["Water is absolutely ___ for all living things.","essential|essentials|essentially|essence",0,"Sau to-be + trạng từ absolutely cần tính từ → <b>essential</b> (thiết yếu)."],
+["She smiled ___ when she received the gift.","happily|happen|happiness|happy",0,"Sau động từ thường smiled cần trạng từ → <b>happily</b>."],
+["The medicine will ___ your headache in a few minutes.","relieve|relieving|relieved|relief",0,"Sau “will” là động từ nguyên thể → <b>relieve</b> (làm dịu)."],
+["He is highly ___ of leading the team to victory.","capable|capables|capability|capably",0,"Sau to-be + highly cần tính từ; “capable of” → <b>capable</b> (có khả năng)."],
+["The students listened ___ to the professor's lecture.","attentive|attentively|attends|attention",1,"Sau động từ listened cần trạng từ → <b>attentively</b> (chăm chú)."],
+["The new ___ in the city center was designed by a famous architect.","build|built|building|builder",2,"Sau “The new” là danh từ; hợp nghĩa “được thiết kế bởi kiến trúc sư” → <b>building</b> (tòa nhà)."],
+["Let's ___ the process to save time.","simplify|simplicity|simple|simply",0,"Sau “Let's” là động từ nguyên thể; <b>-ify</b> → <b>simplify</b> (đơn giản hóa)."]];
+
+const RU={n:[["tion","-tion, -sion","sự việc, hành động (từ động từ sang)"],["sion","-tion, -sion","sự việc, hành động (từ động từ sang)"],["ment","-ment","sự vật, trạng thái, quá trình, hành động"],["ness","-ness","phẩm chất, trạng thái (từ tính từ sang)"],["ity","-ity","đặc tính, trạng thái, mức độ (từ tính từ sang)"],["ce","-ce, -cy","trạng thái, tính chất"],["cy","-ce, -cy","trạng thái, tính chất"],["ship","-ship","mối quan hệ, cương vị, kỹ năng"],["hood","-hood","thời kỳ, giai đoạn"],["dom","-dom","lãnh thổ, quyền lực, trạng thái chung"],["ism","-ism","chủ nghĩa, học thuyết"],["ee","-ee","người bị tác động, người nhận"],["ist","-ist, -ian","chuyên gia, người làm nghề"],["ian","-ist, -ian","chuyên gia, người làm nghề"],["ant","-ant, -ent","người thực hiện"],["ent","-ant, -ent","người thực hiện"],["er","-er, -or","người hoặc máy móc thực hiện hành động"],["or","-er, -or","người hoặc máy móc thực hiện hành động"]],
+v:[["ize","-ize, -ise","làm cho trở thành, hóa"],["ise","-ize, -ise","làm cho trở thành, hóa"],["ify","-ify","làm cho biến đổi thành, hóa"],["ate","-ate","tạo ra, làm ra, đưa vào trạng thái"],["en","-en","làm cho... hơn, làm cho có đặc tính"]],
+adj:[["ful","-ful","đầy, có nhiều phẩm chất"],["less","-less","không có, thiếu phẩm chất"],["ious","-ous / -ious","có tính chất, mang đặc điểm của"],["ous","-ous / -ious","có tính chất, mang đặc điểm của"],["ical","-al / -ic / -ical","thuộc về"],["al","-al / -ic / -ical","thuộc về"],["ic","-al / -ic / -ical","thuộc về"],["ive","-ive","có khuynh hướng, chủ động"],["able","-able / -ible","có thể, có khả năng làm được"],["ible","-able / -ible","có thể, có khả năng làm được"],["ish","-ish","có tính chất của"],["ed","-ed","cảm giác của người (bị tác động)"],["ing","-ing","bản chất của vật/sự việc (gây ra cảm giác)"],["y","-y","nhiều, dồi dào"]],
+adv:[["ly","-ly","tính từ + ly = trạng từ (một cách...)"]]};
+function why(w,k){if(k=="adj"&&w=="friendly")return ", đuôi <b>-ly</b> nhưng là <b>tính từ</b> (danh từ + ly = tính từ), một bẫy quen thuộc";if(k=="adv"&&w=="hardly")return ", đuôi <b>-ly</b> và mang nghĩa “hầu như không”";
+const r=RU[k].filter(u=>w.endsWith(u[0])&&w.length>u[0].length+2).sort((a,b)=>b[0].length-a[0].length)[0];if(r)return `, có đuôi <b>${r[1]}</b> (${r[2]})`;
+if(k=="v"&&/^en.{4,}/.test(w))return ", có tiền tố <b>en-</b> (đặt vào trạng thái, gây ra...)";return ""}
+const CLS={n:"danh từ",v:"động từ",adj:"tính từ",adv:"trạng từ"},KS=["n","v","adj","adv"];
+const EX={36:" (chỉ cảm xúc người)",37:" (chỉ tính chất vật/sự việc)",41:" (lưu ý bẫy đuôi -ly)",51:" (mang nghĩa ‘hầu như không’)"};
+const NOTE={38:"“Homely” và “homeward” cũng có thể là tính từ; theo đáp án của file, <b>homeless</b> là lựa chọn có đuôi -less rõ nhất.",51:"“Hard” vừa là tính từ vừa là trạng từ; theo đáp án của file, <b>hardly</b> là lựa chọn mang đuôi -ly (nghĩa “hầu như không”)."};
+const Q=[];
+for(let i=0;i<60;i++){const o=R[2*i].split("|").map(x=>x.split(":")),ai=R[2*i+1],k=KS[i/15|0],a=o[ai];
+Q.push([`Từ nào dưới đây là ${CLS[k][0].toUpperCase()+CLS[k].slice(1)}${EX[i+1]||""}?`,o.map(x=>x[0]).join("|"),ai,`<b>${a[0]}</b> (${CLS[k]}): ${a[2]}${why(a[0],k)}.${NOTE[i+1]?"<br><i>"+NOTE[i+1]+"</i>":""}<div class="fam">${o.map(x=>`<span class="chip c${x[1]}">${x[0]} <em>(${x[1]}): ${x[2]}</em></span>`).join("")}</div>`])}
+Q.push(...W);
+const N=Q.length,res=Array(N).fill(null),L="ABCD";
+function card(i){const q=Q[i],o=q[1].split("|");return `<span class="qn">Câu ${i+1}</span><p class="t">${q[0].replace(/_{3,}/,"<u>&nbsp;</u>")}</p><div class="op">${o.map((t,j)=>`<button data-j="${j}"${res[i]!==null?" disabled":""}><b>${L[j]}</b>${t}</button>`).join("")}</div><div class="fb" style="display:none"></div>`}
+function bind(i){const el=$("#q"+i),q=Q[i],o=q[1].split("|"),bs=el.querySelectorAll("button"),fb=el.querySelector(".fb");bs.forEach(b=>b.onclick=()=>{const j=+b.dataset.j,ok=j==q[2];res[i]=ok?1:0;bs.forEach(x=>x.disabled=true);bs[q[2]].classList.add("c");if(!ok)b.classList.add("x");el.classList.add(ok?"ok2":"no2");fb.style.display="block";fb.className="fb "+(ok?"ok":"no");fb.innerHTML=(ok?"✅ <b>Chính xác!</b> ":`❌ <b>Chưa đúng.</b> Đáp án đúng là <b>${L[q[2]]}. ${o[q[2]]}</b>. `)+q[3];sfx(ok);upd()})}
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add("on");io.unobserve(x.target)}}),{threshold:.06});
+const HD={0:"Dạng 1 · Tìm Danh từ (câu 1–15)",15:"Dạng 2 · Tìm Động từ (câu 16–30)",30:"Dạng 3 · Tìm Tính từ (câu 31–45)",45:"Dạng 4 · Tìm Trạng từ (câu 46–60)"};
+Q.forEach((q,i)=>{if(HD[i])$("#m1").insertAdjacentHTML("beforeend",`<div class="qh">${HD[i]}</div>`);const d=document.createElement("div");d.className="q rv";d.id="q"+i;d.innerHTML=card(i);$(i<60?"#m1":"#m2").appendChild(d);bind(i)});
+function upd(){const a=res.filter(x=>x!==null).length,o=res.filter(x=>x===1).length,g=k=>res.slice(k*15,k*15+15).filter(x=>x===1).length,wf=res.slice(60).filter(x=>x===1).length;$("#pg").style.width=a/N*100+"%";$("#st").textContent=a+"/"+N;$("#so").textContent="✔ "+o;$("#sw").textContent="✘ "+(a-o);$("#big").textContent=o+" / "+N;
+$("#pp").innerHTML=`<i>Danh từ: ${g(0)}/15</i><i>Động từ: ${g(1)}/15</i><i>Tính từ: ${g(2)}/15</i><i>Trạng từ: ${g(3)}/15</i><i>Word Form: ${wf}/40</i>`;
+const w=res.map((x,i)=>x===0?i:-1).filter(i=>i>=0);$("#wl").innerHTML=w.length?"Câu cần xem lại:"+w.map(i=>`<a href="#q${i}">${i+1}</a>`).join(" "):"";
+if(a==N){const p=o/N;$("#msg").textContent=p>=.9?"Xuất sắc! Bạn nắm rất chắc từ loại và hậu tố.":p>=.7?"Khá tốt! Xem lại vài câu sai rồi thử lại nhé.":"Cố lên! Đọc lại bảng nhớ nhanh rồi làm lại các câu sai nha.";$("#res").scrollIntoView({block:"center"})}else $("#msg").textContent="Hoàn thành cả 100 câu để nhận lời nhắn nhé."}
+$("#rw").onclick=()=>{const w=res.map((x,i)=>x===0?i:-1).filter(i=>i>=0);if(!w.length)return;w.forEach(i=>{res[i]=null;const el=$("#q"+i);el.className="q rv on";el.innerHTML=card(i);bind(i)});upd();$("#q"+w[0]).scrollIntoView({block:"center"})};
+$("#go").onclick=()=>$("#s0").scrollIntoView();
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+addEventListener("scroll",()=>$("#top").classList.toggle("on",scrollY>innerHeight*.7));
+upd();
+</script>
+</body>
+</html>
