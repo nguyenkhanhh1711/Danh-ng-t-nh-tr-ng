@@ -10,9 +10,9 @@
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth;scroll-padding-top:70px}
-body{background:#f1f1f6;color:var(--ink);font:400 16px/1.7 "Be Vietnam Pro",system-ui,sans-serif;overflow-x:hidden}
-.bg{position:fixed;inset:0;z-index:0;overflow:hidden;background:repeating-linear-gradient(45deg,transparent 0 38px,rgba(120,120,160,.07) 38px 39px),repeating-linear-gradient(-45deg,transparent 0 38px,rgba(120,120,160,.07) 38px 39px),#f1f1f6}
-.bg i{position:absolute;border-radius:50%;filter:blur(70px);animation:dr 14s ease-in-out infinite alternate}
+body{background:#f1f1f6;color:var(--ink);indeflow:hidden;background:repeating-linear-gradient(45deg,transparent 0 38px,rgba(120,120,160,.07) 38px 39px),repeating-linear-gradient(-45deg,transparent 0 38px,rgba(120,120,160,.07) 38px 39px),#f1f1f6}
+.bg i{position:absolute;border-radius:50%font:400 16px/1.7 "Be Vietnam Pro",system-ui,sans-serif;overflow-x:hidden}
+.bg{position:fixed;inset:0;z-index:0;over;filter:blur(70px);animation:dr 14s ease-in-out infinite alternate}
 @keyframes dr{to{transform:translate(30px,-24px) scale(1.1)}}
 #top{position:fixed;top:0;left:0;right:0;z-index:60;padding:calc(8px + env(safe-area-inset-top,0px)) 14px 8px;background:var(--g);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 4px 24px rgba(100,80,200,.18);transform:translateY(-110%);transition:transform .4s}
 #top.on{transform:none}
